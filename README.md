@@ -79,3 +79,9 @@ __Tech Stack__
     GUI interface using JavaFX.
 
     Audit logs for every vote cast.
+
+**USE DIAGRAM**
+
+<p align="center">
+  <img src="usecase.png" alt="Use Case Diagram" width="500"/>
+</p>
