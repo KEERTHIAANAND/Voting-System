@@ -1,6 +1,6 @@
-Voting System with OTP Authentication
+# Voting System with OTP Authentication
 
-Problem Statement
+**Problem Statement**
 
 Traditional voting processes face several challenges:
     
@@ -16,11 +16,11 @@ Traditional voting processes face several challenges:
 
 To solve these issues, we need a secure, object-oriented Voting System with OTP authentication that ensures unique voter verification and safe vote recording.
 
-Project Description
+**Project Description**
 
 The Voting System is a console-based Java application demonstrating OOP principles and secure voting mechanisms. It allows Admin and Voter roles with the following features:
 
-Features
+__Features__
 
     Role-Based Login
 
@@ -52,7 +52,7 @@ Features
 
         Uses classes, inheritance, polymorphism, abstraction, and encapsulation for maintainable code.
 
-Tech Stack
+__Tech Stack__
 
     Programming Language: Java
 
@@ -62,7 +62,7 @@ Tech Stack
 
     Version Control: Git & GitHub.
 
-Advantages
+**Advantages**
 
     Ensures one-person-one-vote securely.
 
@@ -72,7 +72,7 @@ Advantages
 
     Modular design allows easy expansion.
 
-Future Enhancements
+**Future Enhancements**
 
     Integrate email/SMS OTP delivery.
 
