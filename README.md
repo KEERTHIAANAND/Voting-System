@@ -1,51 +1,81 @@
-# Voting-System
+Voting System with OTP Authentication
 
-This project proposes a Java-based secure digital voting system that ensures unique voter identification, one-person-one-vote enforcement, and OTP-based authentication.
-It allows voters to register/login using a unique ID, verifies them via a system-generated OTP, and grants access to the ballot only upon successful verification.
-Votes are recorded securely in a file or database to prevent tampering and ensure accurate result counting.
+Problem Statement
 
-OOP Concepts Used in the Project
+Traditional voting processes face several challenges:
+    
+    Difficulty in ensuring one-person-one-vote enforcement.
 
-    1.Class & Object
+    Manual verification of voter identity is time-consuming and error-prone.
 
-    2.Encapsulation
+    Lack of secure methods to record votes.
 
-    3.Inheritance
+    No OTP-based authentication to verify voters in real-time.
 
-    4.Polymorphism (Overriding)
+    Inability to display results efficiently and securely.
 
-    5.Abstraction
+To solve these issues, we need a secure, object-oriented Voting System with OTP authentication that ensures unique voter verification and safe vote recording.
 
-Class & Object
+Project Description
 
-    Classes like Voter, Candidate, OTPService, and VotingSystem are blueprints.
+The Voting System is a console-based Java application demonstrating OOP principles and secure voting mechanisms. It allows Admin and Voter roles with the following features:
 
-    Objects are created from these classes (e.g., new Voter("user1@example.com")).
+Features
 
-Encapsulation
+    Role-Based Login
 
-    Fields (name, votes, hasVoted) are marked private or protected.
+        Admin: Can view results.
 
-    Getters/Setters (getVotes(), markVoted()) provide controlled access.
+        Voter: Can vote for candidates only once.
 
-    Keeps data safe and prevents direct manipulation.
+    OTP-Based Authentication
 
-Inheritance
+        System generates a 6-digit OTP for secure login.
 
-    Voter extends Person.
+        Voter must verify OTP before accessing voting functionality.
 
-    Common property id is reused instead of rewriting it.
+    Voting Functionality
 
-    Promotes code reusability.
+        Displays candidate list.
 
-Polymorphism (Overriding)
+        Ensures one-person-one-vote using a voted flag.
 
-    display() in Person is overridden in Voter to show extra info (like vote status).
+        Updates vote counts securely.
 
-    Same method name but different behavior.
+    Result Display
 
-Abstraction
+        Admin can view the current voting results.
 
-    VotingSystem hides complex details (OTP generation, file saving) behind simple method calls like startElection() or castVote().
+        Displays candidate names and corresponding votes.
 
-    User just interacts with a few methods without knowing the behind-the-scenes logic.
+    OOP Design
+
+        Uses classes, inheritance, polymorphism, abstraction, and encapsulation for maintainable code.
+
+Tech Stack
+
+    Programming Language: Java
+
+    IDE: Visual Studio Code
+
+    Data Storage: MongoDB
+
+    Version Control: Git & GitHub.
+
+Advantages
+
+    Ensures one-person-one-vote securely.
+
+    Demonstrates OOP principles in real-world application.
+
+    OTP verification increases security and authenticity.
+
+    Modular design allows easy expansion.
+
+Future Enhancements
+
+    Integrate email/SMS OTP delivery.
+
+    GUI interface using JavaFX.
+
+    Audit logs for every vote cast.
