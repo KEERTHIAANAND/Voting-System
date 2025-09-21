@@ -1,4 +1,4 @@
-Voting System with OTP Authentication
+#Voting System with OTP Authentication
 
 Problem Statement
 
