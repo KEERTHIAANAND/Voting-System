@@ -80,7 +80,7 @@ __Tech Stack__
 
     Audit logs for every vote cast.
 
-**USE DIAGRAM**
+**USECASE DIAGRAM**
 
 <p align="center">
   <img src="usecase.png" alt="Use Case Diagram" width="500"/>
