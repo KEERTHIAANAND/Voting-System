@@ -79,3 +79,7 @@ __Tech Stack__
     GUI interface using JavaFX.
 
     Audit logs for every vote cast.
+
+
+    <img width="1179" height="922" alt="image" src="https://github.com/user-attachments/assets/28d1fe5c-6417-4dfb-ab48-b95d2cbb2d26" />
+
