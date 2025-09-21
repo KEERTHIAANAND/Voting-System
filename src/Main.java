@@ -2,22 +2,28 @@ import domain.*;
 import operations.*;
 import java.util.Scanner;
 
+//Main class
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+
+        //creating class handler
         AuthHandler auth = new AuthHandler();
         OTPHandler otpHandler = new OTPHandler();
         VotingHandler vote = new VotingHandler();
         ResultHandler res = new ResultHandler();
 
-        Admin admin = new Admin("admin", "admin123");
-        Voter user1 = new Voter("user1", "pass1");
+        Admin admin = new Admin("admin", "admin123"); //Admin
+        //Voters
+        Voter user1 = new Voter("user1", "pass1"); 
         Voter user2 = new Voter("user2", "pass2");
         
+        //registrations
         auth.register(admin);
         auth.register(user1);
         auth.register(user2);
 
+        //Login
         System.out.println("Welcome to Voting System");
         System.out.print("Enter UserName: ");
         String user_name = sc.nextLine();
@@ -30,6 +36,7 @@ public class Main {
             return;
         }
 
+        //OTP Verification
         String otp = otpHandler.otp();
         System.out.println("OTP sent: "+otp);
         System.out.print("Enter OTP: ");
