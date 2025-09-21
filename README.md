@@ -79,3 +79,4 @@ Future Enhancements
     GUI interface using JavaFX.
 
     Audit logs for every vote cast.
+
